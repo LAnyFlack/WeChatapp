@@ -1,0 +1,6 @@
+<view class="container">
+  <text>本周推荐</text>
+  <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2261055620,1765857650&fm=27&gp=0.jpg'></image>
+  <text>教父</text>
+  <text>超级棒的电影超级棒的电影超级棒的电影</text>
+</view>

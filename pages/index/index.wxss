@@ -1,0 +1,8 @@
+.image{
+  width:375rpx;
+  height:375rpx;
+  border-radius: 50%;
+}
+.aa:hover{
+  color:red;
+}

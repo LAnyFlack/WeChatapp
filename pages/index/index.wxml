@@ -1,0 +1,12 @@
+<view class='container'>
+   <image class='image' src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2261055620,1765857650&fm=27&gp=0.jpg'></image>
+
+   <text style='font-weight:bold' class='text'>Hello world</text>
+
+<navigator class='aa' style='display: inline ;' url='/pages/weekly/weekly' open-type='redirect'>123123123</navigator> 
+    <!--optypr 默认是navigator-->
+   <text class='text'>Hello world Hello worldHello world</text>
+   <!--弹性盒子布局！！-->
+   <!--rpx相对长度单位，宽度都为750rpx-->
+   <!--一般使用iphone6的-->
+</view>
