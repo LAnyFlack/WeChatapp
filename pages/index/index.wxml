@@ -3,10 +3,22 @@
 
    <text style='font-weight:bold' class='text'>Hello world</text>
 
-<navigator class='aa' style='display: inline ;' url='/pages/weekly/weekly' open-type='redirect'>123123123</navigator> 
-    <!--optypr 默认是navigator-->
+<navigator class='aa' style='display: inline ;' url='/pages/weekly/weekly' open-type='switchTab'>123123123</navigator> 
+   
    <text class='text'>Hello world Hello worldHello world</text>
+   </view>
+
+
+
+
+   <!--optype 默认是navigate，redirect是不能返回,switchTab是切换tab-->
    <!--弹性盒子布局！！-->
-   <!--rpx相对长度单位，宽度都为750rpx-->
-   <!--一般使用iphone6的-->
-</view>
+   <!--rpx相对长度单位，所有手机的宽度都为750rpx-->
+   <!--一般使用iphone6的因为他的px宽度刚好睡350rpx-->
+   <!--border-radius: 50%;来设置圆形边框-->
+
+
+<!--使用tabbar首先要准备icon
+app.json，window属性定义页面的default样式
+
+-->
