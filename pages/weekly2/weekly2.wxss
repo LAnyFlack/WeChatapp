@@ -24,3 +24,9 @@ text{
   align-items: center;
   justify-content: space-around;
 }
+
+.return-button{
+  position: absolute;
+  right:10rpx;
+  bottom:20rpx;
+}

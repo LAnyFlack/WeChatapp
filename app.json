@@ -1,7 +1,8 @@
 {
   "pages":["pages/index/index",
            "pages/weekly/weekly",
-           "pages/weekly2/weekly2"
+           "pages/weekly2/weekly2",
+           "pages/detail/detail"
          ],
   "tabBar":{
     "list":[
@@ -23,7 +24,6 @@
         "iconPath": "images/icon/1.png",
         "selectedIconPath": "images/icon/2.png"
       }
-
     ],
     "color":"#000",
     "selectedColor": "#f00"

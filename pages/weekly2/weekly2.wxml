@@ -1,19 +1,30 @@
 <view class="container">
-  <swiper style='width:90%;height:100vh;' indicator-dots='{{true}}' current='{{weeklyMovieList.length - 1}}'>
+  <swiper style='width:90%;height:100vh;' indicator-dots='{{true}}' current='{{currentIndex}}'>
   <!--显示展示的点,默认显示第几个点,使用局限--> 
     <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
-      <view>
+      <view bindtap='f4' data-user-name='blabla' data-movie-id="{{item.id}}">
+      <!--会存在currenttarget中的dataset的userName的属性，自动把格式转换-->
+      <!--data-user-name => userName-->
+        <text catchtap="f3" wx:if="{{index!=(weeklyMovieList.length-1)}}" class='return-button'>返回本周</text>
+        <!--因为是使用bingtap绑定的，所以在点击的时候会向上传递，就会调用页面跳转的函数-->
+        <!--要在一个总体需要相应动作函数的时候，内部都要使用catchtap-->
         <image src='{{item.imagePath}}'></image>
         <!--使用item作为数组中的具体值，index值为预置的下标-->
         <view class='container1'>
           <text>第{{index+1}}周</text>
-          <text>{{item.name}}</text>
+          <text>{{item.name}},id:{{item.id}}</text>
           <text>点评:{{item.comment}}</text>
           <text wx:if="{{item.isHightlyRecommended}}" style="font-size:16px;color:red;">强烈建议</text>
+          <text>{{count}}</text>
+          <button catchtap="f0">show count</button>
+          <button catchtap="f1">+1</button>
         </view>
     </view>
     </swiper-item>
   </swiper>
+
+    <!--text>{{count}}</text>
+    <button bindtap="f0">show count</button-->
 </view>
 
 
