@@ -1,14 +1,29 @@
 // pages/weekly/weekly.js
 Page({
-  data:{
-    thisWeekMovie:{
-      name:"教父",
-      comment:"123123123123123123123",
-      imagePath:"/images/1.jpg",
-      isHightlyRecommended:true
-    },
-    count:123,
-    score:61
+  data: {
+    
+    weeklyMovieList: [
+      {
+        name: "教父1",
+        comment: "123123123123123123123",
+        imagePath: "/images/1.jpg",
+        isHightlyRecommended: true
+     },
+      {
+        name: "教父2",
+        comment: "123123123123123123123",
+        imagePath: "/images/1.jpg",
+        isHightlyRecommended: true
+     },
+      {
+        name: "教父3",
+        comment: "123123123123123123123",
+        imagePath: "/images/1.jpg",
+        isHightlyRecommended: true
+     }
+    ],
+    count: 123,
+    score: 61
 
   },
   /**

@@ -1,9 +1,16 @@
 {
   "pages":["pages/index/index",
-           "pages/weekly/weekly"
+           "pages/weekly/weekly",
+           "pages/weekly2/weekly2"
          ],
   "tabBar":{
     "list":[
+      {
+        "text": "关于",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/1.png",
+        "selectedIconPath": "images/icon/2.png"
+      },
       {
         "text":"每周推荐",
         "pagePath":"pages/weekly/weekly",
@@ -11,8 +18,8 @@
         "selectedIconPath": "images/icon/2.png"
       },
       {
-        "text": "关于",
-        "pagePath": "pages/index/index",
+        "text": "每周推荐2",
+        "pagePath": "pages/weekly2/weekly2",
         "iconPath": "images/icon/1.png",
         "selectedIconPath": "images/icon/2.png"
       }

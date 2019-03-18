@@ -1,0 +1,44 @@
+<view class="container">
+  <swiper style='width:90%;height:100vh;' indicator-dots='{{true}}' current='{{weeklyMovieList.length - 1}}'>
+  <!--显示展示的点,默认显示第几个点,使用局限--> 
+    <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
+      <view>
+        <image src='{{item.imagePath}}'></image>
+        <!--使用item作为数组中的具体值，index值为预置的下标-->
+        <view class='container1'>
+          <text>第{{index+1}}周</text>
+          <text>{{item.name}}</text>
+          <text>点评:{{item.comment}}</text>
+          <text wx:if="{{item.isHightlyRecommended}}" style="font-size:16px;color:red;">强烈建议</text>
+        </view>
+    </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+
+
+
+
+
+  <!--在块状中展示--> 
+  <!--swiper style='height:240px;width:300px;'>
+    <swiper-item>
+      点评1
+      <image src='{{weeklyMovieList[0].imagePath}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <text>点评2</text>
+      <image src="{{weeklyMovieList[0].imagePath}}"></image>
+    </swiper-item>
+    <swiper-item>
+      <text>点评3</text>
+      <image src="{{weeklyMovieList[0].imagePath}}"></image>
+    </swiper-item>
+    <swiper-item>
+      <text>点评4</text>
+      <image src="{{weeklyMovieList[0].imagePath}}"></image>
+    </swiper-item>
+  </swiper-->
+<!--渲染-->  

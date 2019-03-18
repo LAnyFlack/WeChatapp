@@ -1,6 +1,16 @@
 <view class="container">
   <text>本周推荐</text>
-  <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2261055620,1765857650&fm=27&gp=0.jpg'></image>
-  <text>教父</text>
+  <image src='{{thisWeekMovie.imagePath}}'></image>
+  <text>{{thisWeekMovie.name}}</text>
+  <text>{{score}}</text>
+  <text>{{(score>=60)?"111":"222s"}}</text><!--不要加if！！！-->
   <text>超级棒的电影超级棒的电影超级棒的电影</text>
+  <text wx:if="{{thisWeekMovie.isHightlyRecommended}}" style="font-size:16px;color:red;">强烈建议</text>
+  <!--条件渲染，满足条件则展示 活着使用 hidden="thisWeekMovie.isHightlyRecommended"不管现不现实都被渲染了，即可见性需要频繁切换的时候就不推荐使用条件渲染--> 
+
+
+
+
+
+<!--渲染-->  
 </view>
