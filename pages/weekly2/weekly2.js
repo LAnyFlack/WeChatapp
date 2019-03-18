@@ -9,35 +9,34 @@
  */
 Page({
   data: {
-    
     weeklyMovieList: [
       {
         name: "教父1",
         comment: "123123123123123123123",
         imagePath: "/images/1.jpg",
         isHightlyRecommended: true,
-        id:77
+        id: 1291841
      },
       {
         name: "教父2",
         comment: "123123123123123123123",
         imagePath: "/images/1.jpg",
         isHightlyRecommended: true,
-        id:88
+        id: 1291841
      },
       {
         name: "教父3",
         comment: "123123123123123123123",
         imagePath: "/images/1.jpg",
         isHightlyRecommended: true,
-        id:99
+        id: 1291841
       },
       {
         name: "教父4",
         comment: "123123123123123123123",
         imagePath: "/images/1.jpg",
         isHightlyRecommended: true,
-        id:66
+        id: 1291841
       }
     ],
     count: 123,
@@ -160,5 +159,11 @@ Page({
       //不要漏了pages前面的‘/’，不加的话时相对路径
       //设置对应的id，元素自定义属性
     })
+  },
+  onShareAppMessage: function(){
+    //不写的话，分享后为小程序的名字，不是页面的名字
+    return  {
+      title:"每周推荐"
+    }
   }
 })
